@@ -1,0 +1,35 @@
+{
+  "name": "Incubator",
+  "base": "Page",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "incubatedStartups": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "offers": {
+      "type": "hasMany",
+      "model": "Offer",
+      "foreignKey": ""
+    },
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    },
+    "events": {
+      "type": "hasMany",
+      "model": "Event",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

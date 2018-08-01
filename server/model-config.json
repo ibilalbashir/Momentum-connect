@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Momentumuser": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Page": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Company": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Incubator": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Investor": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Post": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Offer": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "mongoDS",
+    "public": true
+  }
+}

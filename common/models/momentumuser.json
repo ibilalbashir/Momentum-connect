@@ -1,0 +1,63 @@
+{
+  "name": "Momentumuser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "workExperience": {
+      "type": [
+        "object"
+      ],
+      "default": "[]"
+    },
+    "education": {
+      "type": [
+        "object"
+      ],
+      "default": "[]"
+    },
+    "skills": {
+      "type": [
+        "string"
+      ]
+    },
+    "interests": {
+      "type": [
+        "string"
+      ],
+      "default": [
+        "[]"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "companies": {
+      "type": "hasMany",
+      "model": "Company",
+      "foreignKey": ""
+    },
+    "incubators": {
+      "type": "hasMany",
+      "model": "Incubator",
+      "foreignKey": ""
+    },
+    "investors": {
+      "type": "hasMany",
+      "model": "Investor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

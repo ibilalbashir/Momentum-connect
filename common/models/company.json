@@ -1,0 +1,40 @@
+{
+  "name": "Company",
+  "base": "Page",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "products": {
+      "type": [
+        "string"
+      ]
+    },
+    "clients": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "offers": {
+      "type": "hasMany",
+      "model": "Offer",
+      "foreignKey": ""
+    },
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    },
+    "events": {
+      "type": "hasMany",
+      "model": "Event",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "companyLogo": {
+      "type": "string"
+    },
+    "eventTitle": {
+      "type": "string",
+      "required": true
+    },
+    "eventDescription": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "eventSpeakers": {
+      "type": [
+        "string"
+      ]
+    },
+    "eventActivities": {
+      "type": [
+        "string"
+      ]
+    },
+    "images": {
+      "type": [
+        "string"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "ticketPrice": {
+      "type": "number"
+    },
+    "socialMediaProfiles": {
+      "type": [
+        "object"
+      ]
+    },
+    "rsvpList": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
